@@ -17,10 +17,10 @@ import SwifterSwift
 class CreateLoanViewController: UIViewController {
     
     let dueDates: [[String: Any]] = [
-        ["name": "1 Month", "value": 1],
-        ["name": "3 Months", "value": 3],
-        ["name": "6 Months", "value": 6],
-         ["name": "12 Months", "value": 12]
+        ["name": "1 Month", "value": 1, "rate": 0.1],
+        ["name": "3 Months", "value": 3, "rate": 0.15],
+        ["name": "6 Months", "value": 6, "rate": 0.2],
+         ["name": "12 Months", "value": 12, "rate": 0.35]
     ]
     var term: Int = 1
     
@@ -82,12 +82,12 @@ extension CreateLoanViewController: UITextFieldDelegate {
             attrs.entryInteraction = .absorbTouches
             attrs.screenInteraction = .dismiss
             let items = self.dueDates.compactMap { (item) -> String? in
-                return item["name"] as? String
+                return "\((item["name"] as? String) ?? "") - \(Int(((item["rate"] as? Double) ?? 0) * 100))%"
             }
             let vc = ListActionSheetController.instance(withItems: items)
-            vc.didSelect = { [weak self] index in
+            vc.didSelect = { [weak self] index, text in
                 self?.term = self?.dueDates[index]["value"] as? Int ?? 1
-                self?.txtDueDate.text = self?.dueDates[index]["name"] as? String
+                self?.txtDueDate.text = text
                 SwiftEntryKit.dismiss()
             }
             SwiftEntryKit.display(entry: vc, using: attrs)

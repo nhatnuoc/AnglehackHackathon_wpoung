@@ -18,7 +18,7 @@ class ListActionSheetController: UIViewController {
         }
     }
     
-    var didSelect: ((_ index: Int) -> Void)?
+    var didSelect: ((_ index: Int, _ text: String) -> Void)?
     let items: BehaviorRelay<[String]> = BehaviorRelay<[String]>(value: [])
     let disposeBag = DisposeBag()
     required init?(coder aDecoder: NSCoder) {
@@ -32,7 +32,8 @@ class ListActionSheetController: UIViewController {
             cell.textLabel?.text = model
         }.disposed(by: self.disposeBag)
         self.tableView.rx.itemSelected.bind { [weak self] (indexPath) in
-            self?.didSelect?(indexPath.row)
+            let str = self?.items.value[indexPath.row] ?? ""
+            self?.didSelect?(indexPath.row, str)
         }.disposed(by: self.disposeBag)
     }
     
