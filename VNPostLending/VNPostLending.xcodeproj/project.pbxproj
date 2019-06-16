@@ -23,6 +23,7 @@
 		0B50050D22B568390086819B /* SavingObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B50050C22B568390086819B /* SavingObject.swift */; };
 		0B50050F22B56DFC0086819B /* EmptyDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B50050E22B56DFC0086819B /* EmptyDataTableViewCell.swift */; };
 		0B50051122B592EB0086819B /* ListActionSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B50051022B592EB0086819B /* ListActionSheetController.swift */; };
+		0B9E14A422B5E8D5002C66AB /* LoanRemindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E14A322B5E8D5002C66AB /* LoanRemindViewController.swift */; };
 		47D2889105F68022A48AD78B /* Pods_VNPostLending.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C876CF1285BF418AA106BD66 /* Pods_VNPostLending.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		0B50050C22B568390086819B /* SavingObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingObject.swift; sourceTree = "<group>"; };
 		0B50050E22B56DFC0086819B /* EmptyDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDataTableViewCell.swift; sourceTree = "<group>"; };
 		0B50051022B592EB0086819B /* ListActionSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListActionSheetController.swift; sourceTree = "<group>"; };
+		0B9E14A322B5E8D5002C66AB /* LoanRemindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanRemindViewController.swift; sourceTree = "<group>"; };
 		2C0ECCA35A67F5389AF73546 /* Pods-VNPostLending.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VNPostLending.debug.xcconfig"; path = "Target Support Files/Pods-VNPostLending/Pods-VNPostLending.debug.xcconfig"; sourceTree = "<group>"; };
 		C876CF1285BF418AA106BD66 /* Pods_VNPostLending.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VNPostLending.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -116,6 +118,7 @@
 				0B50050622B545960086819B /* SavingTableViewCell.swift */,
 				0B50050E22B56DFC0086819B /* EmptyDataTableViewCell.swift */,
 				0B50051022B592EB0086819B /* ListActionSheetController.swift */,
+				0B9E14A322B5E8D5002C66AB /* LoanRemindViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				0B5004FD22B543C30086819B /* LoanDetailViewController.swift in Sources */,
 				0B5004FB22B53C5C0086819B /* DashboardViewController.swift in Sources */,
 				0B50051122B592EB0086819B /* ListActionSheetController.swift in Sources */,
+				0B9E14A422B5E8D5002C66AB /* LoanRemindViewController.swift in Sources */,
 				0B5004E922B53BFD0086819B /* AppDelegate.swift in Sources */,
 				0B50050F22B56DFC0086819B /* EmptyDataTableViewCell.swift in Sources */,
 				0B50050B22B5667C0086819B /* LoanObject.swift in Sources */,
