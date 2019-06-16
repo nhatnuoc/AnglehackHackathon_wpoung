@@ -1,0 +1,18 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'VNPostLending' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for VNPostLending
+  pod 'IBAnimatable'
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
+  pod 'RxDataSources', '~> 4.0'
+  pod 'RealmSwift'
+  pod 'SwiftEntryKit', '1.0.1'
+  pod 'SwifterSwift'
+  pod 'IQKeyboardManagerSwift'
+
+end
